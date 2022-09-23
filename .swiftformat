@@ -1,0 +1,15 @@
+--exclude "**/.build"
+--enable markTypes
+--enable organizeDeclarations
+--enable wrapEnumCases
+--enable isEmpty
+--enable wrapSwitchCases
+--enable sortedSwitchCases
+--marktypes always
+--markextensions always
+--wrapparameters after-first
+--funcattributes prev-line
+--typeattributes prev-line
+--varattributes same-line
+--header strip
+--swiftversion 5.5

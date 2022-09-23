@@ -1,14 +1,6 @@
-//
-//  partyqUITests.swift
-//  partyqUITests
-//
-//  Created by Liam1 on 9/22/22.
-//
-
 import XCTest
 
 class partyqUITests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 

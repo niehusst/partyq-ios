@@ -1,14 +1,6 @@
-//
-//  partyqUITestsLaunchTests.swift
-//  partyqUITests
-//
-//  Created by Liam1 on 9/22/22.
-//
-
 import XCTest
 
 class partyqUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
