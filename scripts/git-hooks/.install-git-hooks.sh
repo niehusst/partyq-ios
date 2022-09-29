@@ -18,7 +18,7 @@ do
         chmod +x $user_hook_path
     fi
 
-    if ! grep "run-git-hook" $user_hook_path 2>&1 /dev/null
+    if ! grep -r "run-git-hook" $user_hook_path 2>&1 /dev/null
     then
         echo "if [ -f $shared_hooks_root/.run-git-hook.sh ]; then . $shared_hooks_root/.run-git-hook.sh $hook_name; fi" >> $user_hook_path
     fi
