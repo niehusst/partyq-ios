@@ -1,6 +1,6 @@
 name: PR CI checks
 
-on: pull_request
+on: push
 
 env:
     DEVELOPER_DIR: /Applications/Xcode_13.2.1.app/Contents/Developer/
