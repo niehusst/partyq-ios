@@ -20,7 +20,7 @@ struct PartyqButton: View {
             if let safeImage = image {
                 Image(uiImage: safeImage)
             }
-            
+
             Text(title)
                 .font(.title3)
                 .foregroundColor(Color.black)
