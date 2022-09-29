@@ -1,0 +1,34 @@
+name: PR CI checks
+
+on: pull_request
+
+env:
+    DEVELOPER_DIR: /Applications/Xcode_13.2.1.app/Contents/Developer/
+
+jobs:
+    build:
+        id: build
+        runs-on: macos-12
+        timeout-minutes: 15
+        steps:
+            - uses: actions/checkout@v3
+            - run: xcodebuild -workspace partyq.xcworkspace/ -scheme partyq -sdk iphonesimulator -configuration Release build | xcpretty
+
+    unit-test:
+        needs: build
+        runs-on: macos-12
+        timeout-minutes: 20
+        steps:
+            - uses: actions/checkout@v3
+            - run: xcodebuild -workspace partyq.xcworkspace/ -scheme partyqTests -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.2' -configuration Debug test | xcpretty
+        
+    lint-swift:
+        needs: build
+        runs-on: macos-12
+        timeout-minutes: 5
+        steps:
+            - uses: actions/checkout@v3
+            - run: mint bootstrap --mintfile Mintfile --link --overwrite n
+              name: Install Mint deps
+            - run: mint run swiftlint
+              name: Run swiftlint
