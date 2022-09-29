@@ -12,7 +12,7 @@ struct PartyConnectView: View {
                 HStack(spacing: 16) {
                     Spacer()
 
-                    Image(uiImage: R.image.partyq()!)
+                    Image(uiImage: Images.partyq)
                         .resizable()
                         .scaledToFit()
 
@@ -26,7 +26,7 @@ struct PartyConnectView: View {
                         Spacer()
 
                         NavigationLink(destination: SpotifyLoginView()) {
-                            PartyqButton("Join Party")
+                            PartyqButton("Join Party") // TODO: localize
                         }
 
                         Spacer()
@@ -45,7 +45,7 @@ struct PartyConnectView: View {
 
                 Spacer()
             }
-            .background(Color(R.color.primary100()!))
+            .background(Colors.primary100)
         }
     }
 }

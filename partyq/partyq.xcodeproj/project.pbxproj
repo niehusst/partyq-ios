@@ -11,6 +11,8 @@
 		CD4AA81528E3E7C0003E33CC /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81428E3E7C0003E33CC /* Quick */; };
 		CD4AA81928E3ECC0003E33CC /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81828E3ECC0003E33CC /* Rswift */; };
 		CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E1A28E5301400BE475F /* PartyqButton.swift */; };
+		CD525E1F28E5524D00BE475F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E1E28E5524D00BE475F /* Colors.swift */; };
+		CD525E2128E5525900BE475F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E2028E5525900BE475F /* Images.swift */; };
 		CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB628DD5D8F005E34BB /* partyqApp.swift */; };
 		CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */; };
 		CD911CBB28DD5D93005E34BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD911CBA28DD5D93005E34BB /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		CD525E1A28E5301400BE475F /* PartyqButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyqButton.swift; sourceTree = "<group>"; };
+		CD525E1E28E5524D00BE475F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CD525E2028E5525900BE475F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		CD911CB328DD5D8F005E34BB /* partyq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partyq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD911CB628DD5D8F005E34BB /* partyqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqApp.swift; sourceTree = "<group>"; };
 		CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyConnectView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		CD525E1828E52FEA00BE475F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CD525E1D28E5522900BE475F /* Util */,
 				CD525E1C28E5318800BE475F /* Extensions */,
 				CD525E1928E5300000BE475F /* Views */,
 			);
@@ -109,6 +114,15 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD525E1D28E5522900BE475F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CD525E1E28E5524D00BE475F /* Colors.swift */,
+				CD525E2028E5525900BE475F /* Images.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		CD911CAA28DD5D8E005E34BB = {
@@ -371,8 +385,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */,
+				CD525E1F28E5524D00BE475F /* Colors.swift in Sources */,
 				CDECBC3B28E3F49600F5311D /* JoinPartyView.swift in Sources */,
 				CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */,
+				CD525E2128E5525900BE475F /* Images.swift in Sources */,
 				CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */,
 				CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */,
 				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,

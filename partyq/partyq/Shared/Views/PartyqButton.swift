@@ -27,7 +27,7 @@ struct PartyqButton: View {
         }
         .frame(minWidth: 48, maxWidth: .infinity)
         .padding()
-        .background(Color(R.color.primary600()!))
+        .background(Colors.primary600)
         .cornerRadius(100)
     }
 }
