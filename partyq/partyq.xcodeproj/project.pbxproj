@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD4AA81228E3E78E003E33CC /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81128E3E78E003E33CC /* Nimble */; };
+		CD4AA81528E3E7C0003E33CC /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81428E3E7C0003E33CC /* Quick */; };
+		CD4AA81928E3ECC0003E33CC /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81828E3ECC0003E33CC /* Rswift */; };
+		CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E1A28E5301400BE475F /* PartyqButton.swift */; };
+		CD525E1F28E5524D00BE475F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E1E28E5524D00BE475F /* Colors.swift */; };
+		CD525E2128E5525900BE475F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E2028E5525900BE475F /* Images.swift */; };
 		CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB628DD5D8F005E34BB /* partyqApp.swift */; };
-		CD911CB928DD5D8F005E34BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB828DD5D8F005E34BB /* ContentView.swift */; };
+		CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */; };
 		CD911CBB28DD5D93005E34BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD911CBA28DD5D93005E34BB /* Assets.xcassets */; };
 		CD911CBE28DD5D93005E34BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD911CBD28DD5D93005E34BB /* Preview Assets.xcassets */; };
 		CD911CC828DD5D93005E34BB /* partyqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CC728DD5D93005E34BB /* partyqTests.swift */; };
 		CD911CD228DD5D94005E34BB /* partyqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CD128DD5D94005E34BB /* partyqUITests.swift */; };
 		CD911CD428DD5D94005E34BB /* partyqUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CD328DD5D94005E34BB /* partyqUITestsLaunchTests.swift */; };
+		CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECBC3528E3ED7F00F5311D /* R.generated.swift */; };
+		CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECBC3828E3F1F600F5311D /* MainView.swift */; };
+		CDECBC3B28E3F49600F5311D /* JoinPartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECBC3A28E3F49600F5311D /* JoinPartyView.swift */; };
+		CDECBC3F28E3F4E800F5311D /* SpotifyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECBC3E28E3F4E800F5311D /* SpotifyLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD525E1A28E5301400BE475F /* PartyqButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyqButton.swift; sourceTree = "<group>"; };
+		CD525E1E28E5524D00BE475F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CD525E2028E5525900BE475F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		CD911CB328DD5D8F005E34BB /* partyq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partyq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD911CB628DD5D8F005E34BB /* partyqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqApp.swift; sourceTree = "<group>"; };
-		CD911CB828DD5D8F005E34BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyConnectView.swift; sourceTree = "<group>"; };
 		CD911CBA28DD5D93005E34BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD911CBD28DD5D93005E34BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD911CC328DD5D93005E34BB /* partyqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = partyqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +57,10 @@
 		CD911CCD28DD5D93005E34BB /* partyqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = partyqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD911CD128DD5D94005E34BB /* partyqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqUITests.swift; sourceTree = "<group>"; };
 		CD911CD328DD5D94005E34BB /* partyqUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDECBC3528E3ED7F00F5311D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CDECBC3828E3F1F600F5311D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CDECBC3A28E3F49600F5311D /* JoinPartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPartyView.swift; sourceTree = "<group>"; };
+		CDECBC3E28E3F4E800F5311D /* SpotifyLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4AA81928E3ECC0003E33CC /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4AA81528E3E7C0003E33CC /* Quick in Frameworks */,
+				CD4AA81228E3E78E003E33CC /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +91,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD525E1828E52FEA00BE475F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD525E1D28E5522900BE475F /* Util */,
+				CD525E1C28E5318800BE475F /* Extensions */,
+				CD525E1928E5300000BE475F /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CD525E1928E5300000BE475F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD525E1A28E5301400BE475F /* PartyqButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD525E1C28E5318800BE475F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD525E1D28E5522900BE475F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CD525E1E28E5524D00BE475F /* Colors.swift */,
+				CD525E2028E5525900BE475F /* Images.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CD911CAA28DD5D8E005E34BB = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +148,15 @@
 		CD911CB528DD5D8F005E34BB /* partyq */ = {
 			isa = PBXGroup;
 			children = (
+				CD525E1828E52FEA00BE475F /* Shared */,
+				CDECBC3D28E3F4D500F5311D /* SpotifyLogin */,
+				CDECBC3C28E3F4B900F5311D /* JoinParty */,
+				CDECBC3728E3F1D200F5311D /* PartyConnect */,
+				CDECBC3428E3ED6700F5311D /* Generated */,
 				CD911CB628DD5D8F005E34BB /* partyqApp.swift */,
-				CD911CB828DD5D8F005E34BB /* ContentView.swift */,
 				CD911CBA28DD5D93005E34BB /* Assets.xcassets */,
 				CD911CBC28DD5D93005E34BB /* Preview Content */,
+				CDECBC3828E3F1F600F5311D /* MainView.swift */,
 			);
 			path = partyq;
 			sourceTree = "<group>";
@@ -127,6 +186,38 @@
 			path = partyqUITests;
 			sourceTree = "<group>";
 		};
+		CDECBC3428E3ED6700F5311D /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				CDECBC3528E3ED7F00F5311D /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		CDECBC3728E3F1D200F5311D /* PartyConnect */ = {
+			isa = PBXGroup;
+			children = (
+				CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */,
+			);
+			path = PartyConnect;
+			sourceTree = "<group>";
+		};
+		CDECBC3C28E3F4B900F5311D /* JoinParty */ = {
+			isa = PBXGroup;
+			children = (
+				CDECBC3A28E3F49600F5311D /* JoinPartyView.swift */,
+			);
+			path = JoinParty;
+			sourceTree = "<group>";
+		};
+		CDECBC3D28E3F4D500F5311D /* SpotifyLogin */ = {
+			isa = PBXGroup;
+			children = (
+				CDECBC3E28E3F4E800F5311D /* SpotifyLoginView.swift */,
+			);
+			path = SpotifyLogin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD911CD728DD5D94005E34BB /* Build configuration list for PBXNativeTarget "partyq" */;
 			buildPhases = (
+				CD4AA81628E3EA44003E33CC /* Build R.swift resources */,
 				CD911CAF28DD5D8E005E34BB /* Sources */,
 				CD911CB028DD5D8E005E34BB /* Frameworks */,
 				CD911CB128DD5D8E005E34BB /* Resources */,
@@ -143,6 +235,9 @@
 			dependencies = (
 			);
 			name = partyq;
+			packageProductDependencies = (
+				CD4AA81828E3ECC0003E33CC /* Rswift */,
+			);
 			productName = partyq;
 			productReference = CD911CB328DD5D8F005E34BB /* partyq.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +256,10 @@
 				CD911CC528DD5D93005E34BB /* PBXTargetDependency */,
 			);
 			name = partyqTests;
+			packageProductDependencies = (
+				CD4AA81128E3E78E003E33CC /* Nimble */,
+				CD4AA81428E3E7C0003E33CC /* Quick */,
+			);
 			productName = partyqTests;
 			productReference = CD911CC328DD5D93005E34BB /* partyqTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +314,11 @@
 				Base,
 			);
 			mainGroup = CD911CAA28DD5D8E005E34BB;
+			packageReferences = (
+				CD4AA81028E3E78E003E33CC /* XCRemoteSwiftPackageReference "Nimble" */,
+				CD4AA81328E3E7C0003E33CC /* XCRemoteSwiftPackageReference "Quick" */,
+				CD4AA81728E3ECC0003E33CC /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = CD911CB428DD5D8F005E34BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,13 +356,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CD4AA81628E3EA44003E33CC /* Build R.swift resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build R.swift resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD911CAF28DD5D8E005E34BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD911CB928DD5D8F005E34BB /* ContentView.swift in Sources */,
+				CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */,
+				CD525E1F28E5524D00BE475F /* Colors.swift in Sources */,
+				CDECBC3B28E3F49600F5311D /* JoinPartyView.swift in Sources */,
+				CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */,
+				CD525E2128E5525900BE475F /* Images.swift in Sources */,
+				CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */,
 				CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */,
+				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,
+				CDECBC3F28E3F4E800F5311D /* SpotifyLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"partyq/Preview Content\"";
+				DEVELOPMENT_TEAM = 27Z2ASXDQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -447,6 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"partyq/Preview Content\"";
+				DEVELOPMENT_TEAM = 27Z2ASXDQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -579,6 +715,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD4AA81028E3E78E003E33CC /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		CD4AA81328E3E7C0003E33CC /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CD4AA81728E3ECC0003E33CC /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD4AA81128E3E78E003E33CC /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD4AA81028E3E78E003E33CC /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		CD4AA81428E3E7C0003E33CC /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD4AA81328E3E7C0003E33CC /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		CD4AA81828E3ECC0003E33CC /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD4AA81728E3ECC0003E33CC /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD911CAB28DD5D8E005E34BB /* Project object */;
 }

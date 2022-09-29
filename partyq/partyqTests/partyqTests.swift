@@ -1,7 +1,13 @@
+import Nimble
 @testable import partyq
-import XCTest
+import Quick
 
-class partyqTests: XCTestCase {
-    func testExample() throws {
+class partyqTest: QuickSpec {
+    override func spec() {
+        describe("example test") {
+            it("passes") {
+                expect(1 + 1).to(equal(2))
+            }
+        }
     }
 }
