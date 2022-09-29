@@ -28,4 +28,8 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - uses: irgaly/setup-mint@v1
-            - run: mint run swiftlint
+            - run: |
+                mint run swiftlint autocorrect
+                if [[ `git status --porcelain` ]]; then
+                    exit 1
+                fi
