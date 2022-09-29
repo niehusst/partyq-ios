@@ -7,20 +7,45 @@ struct PartyConnectView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("partyq") // replace with image
+                Spacer()
+
+                HStack(spacing: 16) {
+                    Spacer()
+
+                    Image(uiImage: R.image.partyq()!)
+                        .resizable()
+                        .scaledToFit()
+
+                    Spacer()
+                }
 
                 Spacer()
 
                 VStack(spacing: 16) {
-                    NavigationLink(destination: SpotifyLoginView()) {
-                        Text("Create Party") // replace w/ custom button
+                    HStack(spacing: 16) {
+                        Spacer()
+                        
+                        NavigationLink(destination: SpotifyLoginView()) {
+                            PartyqButton("Join Party")
+                        }
+                        
+                        Spacer()
                     }
 
-                    NavigationLink(destination: JoinPartyView()) {
-                        Text("Join Party")
+                    HStack(spacing: 16) {
+                        Spacer()
+                        
+                        NavigationLink(destination: SpotifyLoginView()) {
+                            PartyqButton("Create Party")
+                        }
+                        
+                        Spacer()
                     }
                 }
+
+                Spacer()
             }
+            .background(Color(R.color.primary100()!))
         }
     }
 }

@@ -10,6 +10,7 @@
 		CD4AA81228E3E78E003E33CC /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81128E3E78E003E33CC /* Nimble */; };
 		CD4AA81528E3E7C0003E33CC /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81428E3E7C0003E33CC /* Quick */; };
 		CD4AA81928E3ECC0003E33CC /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81828E3ECC0003E33CC /* Rswift */; };
+		CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E1A28E5301400BE475F /* PartyqButton.swift */; };
 		CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB628DD5D8F005E34BB /* partyqApp.swift */; };
 		CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */; };
 		CD911CBB28DD5D93005E34BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD911CBA28DD5D93005E34BB /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD525E1A28E5301400BE475F /* PartyqButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyqButton.swift; sourceTree = "<group>"; };
 		CD911CB328DD5D8F005E34BB /* partyq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partyq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD911CB628DD5D8F005E34BB /* partyqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqApp.swift; sourceTree = "<group>"; };
 		CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyConnectView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD525E1828E52FEA00BE475F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD525E1C28E5318800BE475F /* Extensions */,
+				CD525E1928E5300000BE475F /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CD525E1928E5300000BE475F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD525E1A28E5301400BE475F /* PartyqButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD525E1C28E5318800BE475F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CD911CAA28DD5D8E005E34BB = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +134,7 @@
 		CD911CB528DD5D8F005E34BB /* partyq */ = {
 			isa = PBXGroup;
 			children = (
+				CD525E1828E52FEA00BE475F /* Shared */,
 				CDECBC3D28E3F4D500F5311D /* SpotifyLogin */,
 				CDECBC3C28E3F4B900F5311D /* JoinParty */,
 				CDECBC3728E3F1D200F5311D /* PartyConnect */,
@@ -346,6 +373,7 @@
 				CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */,
 				CDECBC3B28E3F49600F5311D /* JoinPartyView.swift in Sources */,
 				CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */,
+				CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */,
 				CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */,
 				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,
 				CDECBC3F28E3F4E800F5311D /* SpotifyLoginView.swift in Sources */,
@@ -509,6 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"partyq/Preview Content\"";
+				DEVELOPMENT_TEAM = 27Z2ASXDQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -537,6 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"partyq/Preview Content\"";
+				DEVELOPMENT_TEAM = 27Z2ASXDQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

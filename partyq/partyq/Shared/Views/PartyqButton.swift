@@ -1,20 +1,41 @@
-//
-//  PartyqButton.swift
-//  partyq
-//
-//  Created by Liam1 on 9/28/22.
-//
-
 import SwiftUI
 
+// MARK: - PartyqButton
+
 struct PartyqButton: View {
+    // MARK: Lifecycle
+
+    init(_ title: String, _ image: UIImage? = nil) {
+        self.title = title
+        self.image = image
+    }
+
+    // MARK: Internal
+
+    var title: String
+    var image: UIImage?
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            if let safeImage = image {
+                Image(uiImage: safeImage)
+            }
+            
+            Text(title)
+                .font(.title3)
+                .foregroundColor(Color.black)
+        }
+        .frame(minWidth: 48, maxWidth: .infinity)
+        .padding()
+        .background(Color(R.color.primary600()!))
+        .cornerRadius(100)
     }
 }
 
+// MARK: - PartyqButton_Previews
+
 struct PartyqButton_Previews: PreviewProvider {
     static var previews: some View {
-        PartyqButton()
+        PartyqButton("Some title")
     }
 }
