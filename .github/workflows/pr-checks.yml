@@ -27,7 +27,5 @@ jobs:
         timeout-minutes: 5
         steps:
             - uses: actions/checkout@v3
-            - run: mint bootstrap --mintfile Mintfile --link --overwrite n
-              name: Install Mint deps
+            - uses: irgaly/setup-mint@v1
             - run: mint run swiftlint
-              name: Run swiftlint
