@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3A754F28E7E22A00AF98F4 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = CD3A754E28E7E22A00AF98F4 /* SpotifyiOS */; };
+		CD3A755228E7E2D900AF98F4 /* SpotifyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3A755128E7E2D900AF98F4 /* SpotifyRepository.swift */; };
 		CD4AA81228E3E78E003E33CC /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81128E3E78E003E33CC /* Nimble */; };
 		CD4AA81528E3E7C0003E33CC /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81428E3E7C0003E33CC /* Quick */; };
 		CD4AA81928E3ECC0003E33CC /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81828E3ECC0003E33CC /* Rswift */; };
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD3A755128E7E2D900AF98F4 /* SpotifyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRepository.swift; sourceTree = "<group>"; };
 		CD525E1A28E5301400BE475F /* PartyqButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyqButton.swift; sourceTree = "<group>"; };
 		CD525E1E28E5524D00BE475F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CD525E2028E5525900BE475F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4AA81928E3ECC0003E33CC /* Rswift in Frameworks */,
+				CD3A754F28E7E22A00AF98F4 /* SpotifyiOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD3A755028E7E26200AF98F4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CD3A755128E7E2D900AF98F4 /* SpotifyRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		CD525E1828E52FEA00BE475F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CD3A755028E7E26200AF98F4 /* Repositories */,
 				CD525E1D28E5522900BE475F /* Util */,
 				CD525E1C28E5318800BE475F /* Extensions */,
 				CD525E1928E5300000BE475F /* Views */,
@@ -237,6 +250,7 @@
 			name = partyq;
 			packageProductDependencies = (
 				CD4AA81828E3ECC0003E33CC /* Rswift */,
+				CD3A754E28E7E22A00AF98F4 /* SpotifyiOS */,
 			);
 			productName = partyq;
 			productReference = CD911CB328DD5D8F005E34BB /* partyq.app */;
@@ -318,6 +332,7 @@
 				CD4AA81028E3E78E003E33CC /* XCRemoteSwiftPackageReference "Nimble" */,
 				CD4AA81328E3E7C0003E33CC /* XCRemoteSwiftPackageReference "Quick" */,
 				CD4AA81728E3ECC0003E33CC /* XCRemoteSwiftPackageReference "R.swift" */,
+				CD3A754D28E7E22A00AF98F4 /* XCRemoteSwiftPackageReference "ios-sdk" */,
 			);
 			productRefGroup = CD911CB428DD5D8F005E34BB /* Products */;
 			projectDirPath = "";
@@ -390,6 +405,7 @@
 				CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */,
 				CD525E2128E5525900BE475F /* Images.swift in Sources */,
 				CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */,
+				CD3A755228E7E2D900AF98F4 /* SpotifyRepository.swift in Sources */,
 				CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */,
 				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,
 				CDECBC3F28E3F4E800F5311D /* SpotifyLoginView.swift in Sources */,
@@ -717,6 +733,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CD3A754D28E7E22A00AF98F4 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/niehusst/ios-sdk/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		CD4AA81028E3E78E003E33CC /* XCRemoteSwiftPackageReference "Nimble" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Nimble";
@@ -744,6 +768,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CD3A754E28E7E22A00AF98F4 /* SpotifyiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD3A754D28E7E22A00AF98F4 /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = SpotifyiOS;
+		};
 		CD4AA81128E3E78E003E33CC /* Nimble */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CD4AA81028E3E78E003E33CC /* XCRemoteSwiftPackageReference "Nimble" */;
