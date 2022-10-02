@@ -25,7 +25,7 @@ struct PartyConnectView: View {
                     HStack(spacing: 16) {
                         Spacer()
 
-                        NavigationLink(destination: SpotifyLoginView()) {
+                        NavigationLink(destination: JoinPartyView()) {
                             PartyqButton("Join Party") // TODO: localize
                         }
 
@@ -52,8 +52,10 @@ struct PartyConnectView: View {
 
 // MARK: - PartyConnectView_Previews
 
-struct PartyConnectView_Previews: PreviewProvider {
-    static var previews: some View {
-        PartyConnectView()
+#if DEBUG
+    struct PartyConnectView_Previews: PreviewProvider {
+        static var previews: some View {
+            PartyConnectView()
+        }
     }
-}
+#endif

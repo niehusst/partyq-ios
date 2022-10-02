@@ -25,7 +25,7 @@ struct PartyqButton: View {
                 .font(.title3)
                 .foregroundColor(Color.black)
         }
-        .frame(minWidth: 48, maxWidth: .infinity)
+        .frame(minWidth: 44, maxWidth: .infinity) // , minHeight: 44)
         .padding()
         .background(Colors.primary600)
         .cornerRadius(100)
@@ -34,8 +34,10 @@ struct PartyqButton: View {
 
 // MARK: - PartyqButton_Previews
 
-struct PartyqButton_Previews: PreviewProvider {
-    static var previews: some View {
-        PartyqButton("Some title")
+#if DEBUG
+    struct PartyqButton_Previews: PreviewProvider {
+        static var previews: some View {
+            PartyqButton("Some title")
+        }
     }
-}
+#endif

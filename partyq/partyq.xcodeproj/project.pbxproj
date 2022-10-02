@@ -22,6 +22,7 @@
 		CD911CC828DD5D93005E34BB /* partyqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CC728DD5D93005E34BB /* partyqTests.swift */; };
 		CD911CD228DD5D94005E34BB /* partyqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CD128DD5D94005E34BB /* partyqUITests.swift */; };
 		CD911CD428DD5D94005E34BB /* partyqUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CD328DD5D94005E34BB /* partyqUITestsLaunchTests.swift */; };
+		CDA1A3E928E9407F00DF3AC7 /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1A3E828E9407F00DF3AC7 /* TextBox.swift */; };
 		CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECBC3528E3ED7F00F5311D /* R.generated.swift */; };
 		CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECBC3828E3F1F600F5311D /* MainView.swift */; };
 		CDECBC3B28E3F49600F5311D /* JoinPartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECBC3A28E3F49600F5311D /* JoinPartyView.swift */; };
@@ -60,6 +61,7 @@
 		CD911CCD28DD5D93005E34BB /* partyqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = partyqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD911CD128DD5D94005E34BB /* partyqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqUITests.swift; sourceTree = "<group>"; };
 		CD911CD328DD5D94005E34BB /* partyqUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDA1A3E828E9407F00DF3AC7 /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
 		CDECBC3528E3ED7F00F5311D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CDECBC3828E3F1F600F5311D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CDECBC3A28E3F49600F5311D /* JoinPartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPartyView.swift; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				CD3A755028E7E26200AF98F4 /* Repositories */,
-				CD525E1D28E5522900BE475F /* Util */,
+				CD525E1D28E5522900BE475F /* Asset Helpers */,
 				CD525E1C28E5318800BE475F /* Extensions */,
 				CD525E1928E5300000BE475F /* Views */,
 			);
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				CD525E1A28E5301400BE475F /* PartyqButton.swift */,
+				CDA1A3E828E9407F00DF3AC7 /* TextBox.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,13 +132,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CD525E1D28E5522900BE475F /* Util */ = {
+		CD525E1D28E5522900BE475F /* Asset Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				CD525E1E28E5524D00BE475F /* Colors.swift */,
 				CD525E2028E5525900BE475F /* Images.swift */,
 			);
-			path = Util;
+			path = "Asset Helpers";
 			sourceTree = "<group>";
 		};
 		CD911CAA28DD5D8E005E34BB = {
@@ -408,6 +411,7 @@
 				CD3A755228E7E2D900AF98F4 /* SpotifyRepository.swift in Sources */,
 				CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */,
 				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,
+				CDA1A3E928E9407F00DF3AC7 /* TextBox.swift in Sources */,
 				CDECBC3F28E3F4E800F5311D /* SpotifyLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
