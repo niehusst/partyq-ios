@@ -1,17 +1,17 @@
 import SpotifyiOS
 
-// MARK: - SpotifyRepositoryProtocol
+// MARK: - SpotifyMusicServiceProvider
 
-protocol SpotifyRepositoryProtocol {
+protocol SpotifyMusicServiceProvider {
     func setup(config: SPTConfiguration)
     func connect()
     func disconnect()
 }
 
-// MARK: - SpotifyRepository
+// MARK: - SpotifyMusicService
 
 // calls to spotify sdk are expected to be done from the main thread
-class SpotifyRepository: SpotifyRepositoryProtocol {
+class SpotifyMusicService: SpotifyMusicServiceProvider {
     var appRemote: SPTAppRemote?
 
     func setup(config: SPTConfiguration) {
