@@ -2,9 +2,8 @@ import SwiftUI
 
 @main
 struct partyqApp: App {
-    
     @State var deeplinkTarget: DeeplinkManager.DeeplinkTarget?
-    
+
     var body: some Scene {
         WindowGroup {
             Group {
