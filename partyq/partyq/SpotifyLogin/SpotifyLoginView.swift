@@ -10,7 +10,26 @@ struct SpotifyLoginView: View {
             VStack(spacing: 32) {
                 Spacer(minLength: 16)
 
-                TextBox("blah blah blah blahblah blah blah blahblah blah blah blah account/legal stuff here")
+                TextBox(header: Strings.info) {
+                    VStack(spacing: 8) {
+                        Text(Strings.partyStartRequirements)
+                            .foregroundColor(Color.black)
+                            .padding()
+
+                        NavigationLink(destination: Text("TODO about page")) {
+                            HStack(spacing: 8) {
+                                Text(Strings.whyIsThis)
+                                    .font(Font.footnote)
+                                    .bold()
+                                    .foregroundColor(Colors.primary500)
+
+                                Image(uiImage: Images.info)
+                                    .renderingMode(.template)
+                                    .tint(Colors.primary500)
+                            }
+                        }
+                    }
+                }
 
                 Button(action: {
                     // TODO: launch spotify auth through repo
@@ -20,20 +39,27 @@ struct SpotifyLoginView: View {
 
                         Image(uiImage: Images.icSpotify)
                             .resizable()
-                            .frame(width: 16, height: 16, alignment: .leading)
-
-                        Spacer()
+                            .frame(width: 24, height: 24, alignment: .leading)
 
                         Text("Login to Spotify")
                             .foregroundColor(Color.white)
 
                         Spacer(minLength: 16)
                     }
+                    .frame(minHeight: 44)
                     .background(Color.black)
-                    .padding(Edge.Set.all, 8)
-//                .frame(minHeight: 44) // TODO: not working...
-//                .cornerRadius(8)
+                    .rounded()
                 })
+                    .rounded()
+                    .basicShadow()
+
+                #if DEBUG
+                    NavigationLink(destination: Text("party contorller")) {
+                        Button(action: {}) {
+                            Text("DEBUG MODE: go to party")
+                        }
+                    }
+                #endif
 
                 Spacer(minLength: 16)
             }

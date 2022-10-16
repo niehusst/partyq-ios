@@ -15,6 +15,8 @@
 		CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E1A28E5301400BE475F /* PartyqButton.swift */; };
 		CD525E1F28E5524D00BE475F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E1E28E5524D00BE475F /* Colors.swift */; };
 		CD525E2128E5525900BE475F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD525E2028E5525900BE475F /* Images.swift */; };
+		CD7F7A2B28FBA0310049A441 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7A2A28FBA0310049A441 /* View+Extension.swift */; };
+		CD7F7A2D28FBACD30049A441 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7A2C28FBACD30049A441 /* Strings.swift */; };
 		CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB628DD5D8F005E34BB /* partyqApp.swift */; };
 		CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */; };
 		CD911CBB28DD5D93005E34BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD911CBA28DD5D93005E34BB /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		CD525E1A28E5301400BE475F /* PartyqButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyqButton.swift; sourceTree = "<group>"; };
 		CD525E1E28E5524D00BE475F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CD525E2028E5525900BE475F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		CD7F7A2A28FBA0310049A441 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		CD7F7A2C28FBACD30049A441 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		CD911CB328DD5D8F005E34BB /* partyq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partyq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD911CB628DD5D8F005E34BB /* partyqApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqApp.swift; sourceTree = "<group>"; };
 		CD911CB828DD5D8F005E34BB /* PartyConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyConnectView.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		CD525E1C28E5318800BE475F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CD7F7A2A28FBA0310049A441 /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				CD525E1E28E5524D00BE475F /* Colors.swift */,
 				CD525E2028E5525900BE475F /* Images.swift */,
+				CD7F7A2C28FBACD30049A441 /* Strings.swift */,
 			);
 			path = "Asset Helpers";
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 			files = (
 				CD911CB928DD5D8F005E34BB /* PartyConnectView.swift in Sources */,
 				CD525E1F28E5524D00BE475F /* Colors.swift in Sources */,
+				CD7F7A2B28FBA0310049A441 /* View+Extension.swift in Sources */,
 				CDECBC3B28E3F49600F5311D /* JoinPartyView.swift in Sources */,
 				CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */,
 				CD525E2128E5525900BE475F /* Images.swift in Sources */,
@@ -433,6 +440,7 @@
 				CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */,
 				CDCD171B28EA88C300360D8E /* SpotifyAuthenticationService.swift in Sources */,
 				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,
+				CD7F7A2D28FBACD30049A441 /* Strings.swift in Sources */,
 				CDA1A3E928E9407F00DF3AC7 /* TextBox.swift in Sources */,
 				CDCD171D28EA8A0900360D8E /* SecretsService.swift in Sources */,
 				CDECBC3F28E3F4E800F5311D /* SpotifyLoginView.swift in Sources */,

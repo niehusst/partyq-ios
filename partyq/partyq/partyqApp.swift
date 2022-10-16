@@ -1,5 +1,7 @@
 import SwiftUI
 
+// MARK: - partyqApp
+
 @main
 struct partyqApp: App {
     @State var deeplinkTarget: DeeplinkManager.DeeplinkTarget?
