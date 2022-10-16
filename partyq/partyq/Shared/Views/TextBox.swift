@@ -2,29 +2,48 @@ import SwiftUI
 
 // MARK: - TextBox
 
-struct TextBox: View {
+struct TextBox<BodyContent: View>: View {
     // MARK: Lifecycle
 
-    init(_ text: String) {
-        self.text = text
+    init(header: String, body: @escaping () -> BodyContent) {
+        headerText = header
+        bodyContent = body
     }
 
     // MARK: Internal
 
-    let text: String
+    let headerText: String
+    let bodyContent: () -> BodyContent
 
     var body: some View {
         let cornerRadius: CGFloat = 4
 
-        Text(text)
-            .foregroundColor(Color.black)
-            .padding(Edge.Set.all, 8)
-            .background(Color.white)
-            .cornerRadius(cornerRadius)
-            .overlay(
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(Color.black, lineWidth: 1)
-            )
+        VStack(spacing: 8) {
+            Spacer().frame(height: 8)
+
+            Text(headerText)
+                .font(Font.title)
+                .foregroundColor(Color.gray)
+
+            Rectangle()
+                .fill(Color.gray)
+                .frame(height: 1)
+                .padding(Edge.Set.horizontal)
+
+            bodyContent()
+
+            Spacer().frame(height: 8)
+        }
+        .cornerRadius(cornerRadius)
+        .overlay(
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(Color.black, lineWidth: 1)
+        )
+        .background(
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .foregroundColor(Color.white)
+                .basicShadow()
+        )
     }
 }
 
@@ -32,6 +51,6 @@ struct TextBox: View {
 
 struct TextBox_Previews: PreviewProvider {
     static var previews: some View {
-        TextBox("Hello")
+        TextBox(header: "Hello") { Text("body") }
     }
 }
