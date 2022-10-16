@@ -21,26 +21,20 @@ struct PartyConnectView: View {
 
                 Spacer()
 
-                VStack(spacing: 16) {
-                    HStack(spacing: 16) {
-                        Spacer()
+                HStack(spacing: 16) {
+                    Spacer()
 
+                    VStack(spacing: 16) {
                         NavigationLink(destination: SpotifyLoginView()) {
-                            PartyqButton("Join Party") // TODO: localize
+                            PartyqButton(Strings.startParty)
                         }
 
-                        Spacer()
-                    }
-
-                    HStack(spacing: 16) {
-                        Spacer()
-
-                        NavigationLink(destination: SpotifyLoginView()) {
-                            PartyqButton("Create Party")
+                        NavigationLink(destination: JoinPartyView()) {
+                            PartyqButton(Strings.joinParty)
                         }
-
-                        Spacer()
                     }
+
+                    Spacer()
                 }
 
                 Spacer()

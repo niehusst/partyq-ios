@@ -1,6 +1,6 @@
 import SwiftUI
 
-final class Colors {
+enum Colors {
     static let primary100 = Color(R.color.primary100()!)
     static let primary200 = Color(R.color.primary200()!)
     static let primary300 = Color(R.color.primary300()!)

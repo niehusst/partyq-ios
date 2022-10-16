@@ -16,7 +16,7 @@ struct PartyqButton: View {
     var image: UIImage?
 
     var body: some View {
-        HStack {
+        HStack(spacing: 8) {
             if let safeImage = image {
                 Image(uiImage: safeImage)
             }
@@ -25,10 +25,13 @@ struct PartyqButton: View {
                 .font(.title3)
                 .foregroundColor(Color.black)
         }
-        .frame(minWidth: 48, maxWidth: .infinity)
+        .frame(minWidth: 44, maxWidth: .infinity)
         .padding()
-        .background(Colors.primary600)
-        .cornerRadius(100)
+        .background(
+            RoundedRectangle(cornerRadius: 100)
+                .fill(Colors.primary500)
+                .basicShadow()
+        )
     }
 }
 
