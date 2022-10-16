@@ -37,10 +37,8 @@ struct PartyqButton: View {
 
 // MARK: - PartyqButton_Previews
 
-#if DEBUG
-    struct PartyqButton_Previews: PreviewProvider {
-        static var previews: some View {
-            PartyqButton("Some title")
-        }
+struct PartyqButton_Previews: PreviewProvider {
+    static var previews: some View {
+        PartyqButton("Some title")
     }
-#endif
+}

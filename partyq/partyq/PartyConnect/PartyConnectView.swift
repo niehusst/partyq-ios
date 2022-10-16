@@ -46,10 +46,8 @@ struct PartyConnectView: View {
 
 // MARK: - PartyConnectView_Previews
 
-#if DEBUG
-    struct PartyConnectView_Previews: PreviewProvider {
-        static var previews: some View {
-            PartyConnectView()
-        }
+struct PartyConnectView_Previews: PreviewProvider {
+    static var previews: some View {
+        PartyConnectView()
     }
-#endif
+}

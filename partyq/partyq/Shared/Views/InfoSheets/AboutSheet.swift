@@ -1,17 +1,14 @@
-//
-//  AboutSheet.swift
-//  partyq
-//
-//  Created by Liam1 on 10/15/22.
-//
-
 import SwiftUI
+
+// MARK: - AboutSheet
 
 struct AboutSheet: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("About partyq") // TODO: flesh out
     }
 }
+
+// MARK: - AboutSheet_Previews
 
 struct AboutSheet_Previews: PreviewProvider {
     static var previews: some View {
