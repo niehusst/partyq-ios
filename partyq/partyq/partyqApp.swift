@@ -25,3 +25,5 @@ struct partyqApp: App {
         }
     }
 }
+
+let ctx: Provider = ServiceProvider()
