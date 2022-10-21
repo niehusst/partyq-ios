@@ -6,4 +6,8 @@ class MockCommunicationService: CommunicationServiceProvider {
     func connectToParty(with _: String) {
         currentlySearching = true
     }
+    
+    func stopSearching() {
+        currentlySearching = false
+    }
 }

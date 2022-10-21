@@ -1,6 +1,6 @@
 import Foundation
 
-class JoinPartyViewModel {
+class JoinPartyViewModel: ObservableObject {
     // MARK: Lifecycle
 
     init(ctx: Provider) {
@@ -16,8 +16,19 @@ class JoinPartyViewModel {
             return false
         }
         ctx.communicationService.connectToParty(with: code)
+        isSearching = true
         return true
     }
+    
+    func stopSearching() {
+        // dont send double stop message to comms service
+        if isSearching {
+            ctx.communicationService.stopSearching()
+            isSearching = false
+        }
+    }
+    
+    @Published var isSearching = false
 
     // MARK: Private
 

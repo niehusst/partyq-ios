@@ -5,11 +5,15 @@ import SwiftUI
 struct JoinPartyView: View {
     // MARK: Internal
 
-    let viewModel: JoinPartyViewModel
+    @StateObject var viewModel: JoinPartyViewModel
 
     var body: some View {
-        if isSearching {
+        if viewModel.isSearching {
             searchScreen
+                .onDisappear {
+                    // stop party search if back button is pressed
+                    viewModel.stopSearching()
+                }
         } else {
             formScreen
         }
@@ -19,7 +23,6 @@ struct JoinPartyView: View {
 
     @State private var code: String = ""
     @State private var showToast = false
-    @State private var isSearching = false
 
     @ViewBuilder private var formScreen: some View {
         VStack {
@@ -51,17 +54,34 @@ struct JoinPartyView: View {
             Spacer()
         }
         .background(Colors.backgroundColor)
-        .toast(message: Strings.toastError,
+        .toast(message: Strings.toastCodeError,
                isShowing: $showToast,
                duration: Toast.short)
     }
 
     @ViewBuilder private var searchScreen: some View {
-        VStack {
+        VStack(spacing: 16) {
+            Spacer()
+            
+            ProgressView()
+                .frame(width: 64, height: 64)
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Colors.gray800)
+                        .opacity(0.75)
+                )
+            
+            Text(Strings.searchingForParty)
+                .font(Font.footnote)
+                .foregroundColor(Colors.gray999)
+            
             Spacer()
 
-            PartyqButton("no")
+            PartyqButton(Strings.stopSearching)
                 .padding(16)
+                .onTapGesture {
+                    viewModel.stopSearching()
+                }
         }
         .background(Colors.backgroundColor)
     }

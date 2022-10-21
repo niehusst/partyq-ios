@@ -4,6 +4,7 @@ import Foundation
 
 protocol CommunicationServiceProvider {
     func connectToParty(with code: String)
+    func stopSearching()
 }
 
 // MARK: - CommunicationService
@@ -11,5 +12,9 @@ protocol CommunicationServiceProvider {
 class CommunicationService: CommunicationServiceProvider {
     func connectToParty(with _: String) {
         // TODO:
+    }
+    
+    func stopSearching() {
+        
     }
 }
