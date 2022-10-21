@@ -15,4 +15,5 @@ enum Strings {
     static let submit = NSLocalizedString("SUBMIT", comment: "button text for submitting form data")
     static let partyCodeInfo = NSLocalizedString("Enter your host's 4-digit code to join their party.", comment: "explanation text of how party code works")
     static let codePlaceholder = NSLocalizedString("e.g. 1234", comment: "placeholder text for a text field for entering a 4-digit number")
+    static let toastError = NSLocalizedString("Code must be 4 digits", comment: "error toast text explaining form number field must be exactly 4 digits long")
 }

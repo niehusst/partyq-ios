@@ -8,6 +8,20 @@ struct JoinPartyView: View {
     let viewModel: JoinPartyViewModel
 
     var body: some View {
+        if isSearching {
+            searchScreen
+        } else {
+            formScreen
+        }
+    }
+
+    // MARK: Private
+
+    @State private var code: String = ""
+    @State private var showToast = false
+    @State private var isSearching = false
+
+    @ViewBuilder private var formScreen: some View {
         VStack {
             Spacer()
 
@@ -26,26 +40,36 @@ struct JoinPartyView: View {
                                 .stroke(Colors.gray300, lineWidth: 1)
                         )
                         .padding()
-                        .onSubmit {
-                            viewModel.searchForParty(with: code)
-                        }
+                        .onSubmit(codeSubmitHandler)
 
                     PartyqButton(Strings.submit)
                         .padding()
-                        .onTapGesture {
-                            viewModel.searchForParty(with: code)
-                        }
+                        .onTapGesture(perform: codeSubmitHandler)
                 }
             }.padding()
 
             Spacer()
         }
         .background(Colors.backgroundColor)
+        .toast(message: Strings.toastError,
+               isShowing: $showToast,
+               duration: Toast.short)
     }
 
-    // MARK: Private
+    @ViewBuilder private var searchScreen: some View {
+        VStack {
+            Spacer()
 
-    @State private var code: String = ""
+            PartyqButton("no")
+                .padding(16)
+        }
+        .background(Colors.backgroundColor)
+    }
+
+    private func codeSubmitHandler() {
+        let codeWasValid = viewModel.searchForParty(with: code)
+        showToast = !codeWasValid
+    }
 }
 
 // MARK: - JoinPartyView_Previews
