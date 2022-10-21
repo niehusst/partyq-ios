@@ -18,19 +18,25 @@ struct JoinPartyView: View {
                         .font(Font.body)
 
                     TextField(Strings.codePlaceholder, text: $code)
-                        .font(Font.title2)
-                        .background(Colors.gray300)
+                        .font(Font.title)
+                        .foregroundColor(Colors.gray999)
                         .keyboardType(.decimalPad)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 4)
+                                .stroke(Colors.gray300, lineWidth: 1)
+                        )
+                        .padding()
                         .onSubmit {
                             viewModel.searchForParty(with: code)
                         }
 
                     PartyqButton(Strings.submit)
+                        .padding()
                         .onTapGesture {
                             viewModel.searchForParty(with: code)
                         }
                 }
-            }
+            }.padding()
 
             Spacer()
         }
