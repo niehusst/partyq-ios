@@ -13,8 +13,6 @@ class CommunicationService: CommunicationServiceProvider {
     func connectToParty(with _: String) {
         // TODO:
     }
-    
-    func stopSearching() {
-        
-    }
+
+    func stopSearching() {}
 }

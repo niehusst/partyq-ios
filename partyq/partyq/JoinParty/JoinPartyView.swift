@@ -22,7 +22,8 @@ struct JoinPartyView: View {
     // MARK: Private
 
     @State private var code: String = ""
-    @State private var showToast = false
+    @State private var showCodeToast = false
+    @State private var showErrorToast = false // TODO: use once comms service is implemented
 
     @ViewBuilder private var formScreen: some View {
         VStack {
@@ -55,14 +56,18 @@ struct JoinPartyView: View {
         }
         .background(Colors.backgroundColor)
         .toast(message: Strings.toastCodeError,
-               isShowing: $showToast,
+               isShowing: $showCodeToast,
                duration: Toast.short)
+        .toast(message: Strings.toastSearchError,
+               isShowing: $showErrorToast,
+               duration: Toast.long)
     }
 
     @ViewBuilder private var searchScreen: some View {
         VStack(spacing: 16) {
             Spacer()
-            
+
+            // TODO: group progress and text views together w/ same bg?
             ProgressView()
                 .frame(width: 64, height: 64)
                 .background(
@@ -70,11 +75,11 @@ struct JoinPartyView: View {
                         .fill(Colors.gray800)
                         .opacity(0.75)
                 )
-            
+
             Text(Strings.searchingForParty)
                 .font(Font.footnote)
                 .foregroundColor(Colors.gray999)
-            
+
             Spacer()
 
             PartyqButton(Strings.stopSearching)
@@ -88,7 +93,7 @@ struct JoinPartyView: View {
 
     private func codeSubmitHandler() {
         let codeWasValid = viewModel.searchForParty(with: code)
-        showToast = !codeWasValid
+        showCodeToast = !codeWasValid
     }
 }
 

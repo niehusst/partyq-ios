@@ -9,6 +9,8 @@ class JoinPartyViewModel: ObservableObject {
 
     // MARK: Internal
 
+    @Published var isSearching = false
+
     /// Begins searching for party matching the input code, if valid
     /// - returns false if `code` isn't length 4, else returns true and searches for party
     func searchForParty(with code: String) -> Bool {
@@ -19,7 +21,7 @@ class JoinPartyViewModel: ObservableObject {
         isSearching = true
         return true
     }
-    
+
     func stopSearching() {
         // dont send double stop message to comms service
         if isSearching {
@@ -27,8 +29,6 @@ class JoinPartyViewModel: ObservableObject {
             isSearching = false
         }
     }
-    
-    @Published var isSearching = false
 
     // MARK: Private
 
