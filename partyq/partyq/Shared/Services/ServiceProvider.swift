@@ -1,5 +1,3 @@
-import SpotifyiOS
-
 // MARK: - Provider
 
 protocol Provider {
@@ -7,7 +5,7 @@ protocol Provider {
     var authService: SpotifyAuthenticationServiceProvider { get }
     var secrets: SecretsServiceProvider { get }
     // TODO: deeplink manager here too?
-    var spotifyAppRemote: SPTAppRemote? { get }
+    var communicationService: CommunicationServiceProvider { get }
 }
 
 // MARK: - ServiceProvider
@@ -20,12 +18,5 @@ class ServiceProvider: Provider {
 
     lazy var secrets: SecretsServiceProvider = SecretsService()
 
-    var spotifyAppRemote: SPTAppRemote? {
-        nil
-        // TODO: get this info from other services? put this somewhere else?
-//        let appRemote = SPTAppRemote(configuration: self.configuration, logLevel: .debug)
-//        appRemote.connectionParameters.accessToken = self.accessToken
-//        appRemote.delegate = self
-//        return appRemote
-    }
+    lazy var communicationService: CommunicationServiceProvider = CommunicationService()
 }
