@@ -26,6 +26,16 @@
 		CD911CD228DD5D94005E34BB /* partyqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CD128DD5D94005E34BB /* partyqUITests.swift */; };
 		CD911CD428DD5D94005E34BB /* partyqUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD911CD328DD5D94005E34BB /* partyqUITestsLaunchTests.swift */; };
 		CDA1A3E928E9407F00DF3AC7 /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1A3E828E9407F00DF3AC7 /* TextBox.swift */; };
+		CDBFFC1829022CAA00FBF1F4 /* JoinPartyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC1729022CAA00FBF1F4 /* JoinPartyViewModel.swift */; };
+		CDBFFC1A29022CD700FBF1F4 /* CommunicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC1929022CD700FBF1F4 /* CommunicationService.swift */; };
+		CDBFFC1C29022F6000FBF1F4 /* SpotifyLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC1B29022F6000FBF1F4 /* SpotifyLoginViewModel.swift */; };
+		CDBFFC1F290237C800FBF1F4 /* JoinPartyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC1E290237C800FBF1F4 /* JoinPartyViewModelTests.swift */; };
+		CDBFFC222902382400FBF1F4 /* MockProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC212902382400FBF1F4 /* MockProvider.swift */; };
+		CDBFFC24290238E500FBF1F4 /* MockSpotifyMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC23290238E500FBF1F4 /* MockSpotifyMusicService.swift */; };
+		CDBFFC262902390E00FBF1F4 /* MockSecretService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC252902390E00FBF1F4 /* MockSecretService.swift */; };
+		CDBFFC282902394300FBF1F4 /* MockCommunicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC272902394300FBF1F4 /* MockCommunicationService.swift */; };
+		CDBFFC2A2902395E00FBF1F4 /* MockSpotifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC292902395E00FBF1F4 /* MockSpotifyAuthenticationService.swift */; };
+		CDBFFC2C2902471B00FBF1F4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBFFC2B2902471B00FBF1F4 /* Toast.swift */; };
 		CDCD171B28EA88C300360D8E /* SpotifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD171A28EA88C300360D8E /* SpotifyAuthenticationService.swift */; };
 		CDCD171D28EA8A0900360D8E /* SecretsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD171C28EA8A0900360D8E /* SecretsService.swift */; };
 		CDCD171F28EA8F8800360D8E /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD171E28EA8F8800360D8E /* DeeplinkManager.swift */; };
@@ -73,6 +83,16 @@
 		CD911CD128DD5D94005E34BB /* partyqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqUITests.swift; sourceTree = "<group>"; };
 		CD911CD328DD5D94005E34BB /* partyqUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partyqUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CDA1A3E828E9407F00DF3AC7 /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
+		CDBFFC1729022CAA00FBF1F4 /* JoinPartyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPartyViewModel.swift; sourceTree = "<group>"; };
+		CDBFFC1929022CD700FBF1F4 /* CommunicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationService.swift; sourceTree = "<group>"; };
+		CDBFFC1B29022F6000FBF1F4 /* SpotifyLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewModel.swift; sourceTree = "<group>"; };
+		CDBFFC1E290237C800FBF1F4 /* JoinPartyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPartyViewModelTests.swift; sourceTree = "<group>"; };
+		CDBFFC212902382400FBF1F4 /* MockProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProvider.swift; sourceTree = "<group>"; };
+		CDBFFC23290238E500FBF1F4 /* MockSpotifyMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpotifyMusicService.swift; sourceTree = "<group>"; };
+		CDBFFC252902390E00FBF1F4 /* MockSecretService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSecretService.swift; sourceTree = "<group>"; };
+		CDBFFC272902394300FBF1F4 /* MockCommunicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCommunicationService.swift; sourceTree = "<group>"; };
+		CDBFFC292902395E00FBF1F4 /* MockSpotifyAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSpotifyAuthenticationService.swift; sourceTree = "<group>"; };
+		CDBFFC2B2902471B00FBF1F4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		CDCD171A28EA88C300360D8E /* SpotifyAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthenticationService.swift; sourceTree = "<group>"; };
 		CDCD171C28EA8A0900360D8E /* SecretsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsService.swift; sourceTree = "<group>"; };
 		CDCD171E28EA8F8800360D8E /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
@@ -121,6 +141,7 @@
 				CDCD171C28EA8A0900360D8E /* SecretsService.swift */,
 				CDCD171E28EA8F8800360D8E /* DeeplinkManager.swift */,
 				CDCD172328EA98A700360D8E /* ServiceProvider.swift */,
+				CDBFFC1929022CD700FBF1F4 /* CommunicationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -142,6 +163,7 @@
 				CD7F7A2E28FBBF050049A441 /* InfoSheets */,
 				CD525E1A28E5301400BE475F /* PartyqButton.swift */,
 				CDA1A3E828E9407F00DF3AC7 /* TextBox.swift */,
+				CDBFFC2B2902471B00FBF1F4 /* Toast.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +250,8 @@
 		CD911CC628DD5D93005E34BB /* partyqTests */ = {
 			isa = PBXGroup;
 			children = (
+				CDBFFC202902380F00FBF1F4 /* Mocks */,
+				CDBFFC1D290237B400FBF1F4 /* JoinParty */,
 				CDCD172028EA925400360D8E /* Services */,
 			);
 			path = partyqTests;
@@ -240,6 +264,26 @@
 				CD911CD328DD5D94005E34BB /* partyqUITestsLaunchTests.swift */,
 			);
 			path = partyqUITests;
+			sourceTree = "<group>";
+		};
+		CDBFFC1D290237B400FBF1F4 /* JoinParty */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFFC1E290237C800FBF1F4 /* JoinPartyViewModelTests.swift */,
+			);
+			path = JoinParty;
+			sourceTree = "<group>";
+		};
+		CDBFFC202902380F00FBF1F4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CDBFFC212902382400FBF1F4 /* MockProvider.swift */,
+				CDBFFC23290238E500FBF1F4 /* MockSpotifyMusicService.swift */,
+				CDBFFC252902390E00FBF1F4 /* MockSecretService.swift */,
+				CDBFFC272902394300FBF1F4 /* MockCommunicationService.swift */,
+				CDBFFC292902395E00FBF1F4 /* MockSpotifyAuthenticationService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		CDCD172028EA925400360D8E /* Services */ = {
@@ -270,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				CDECBC3A28E3F49600F5311D /* JoinPartyView.swift */,
+				CDBFFC1729022CAA00FBF1F4 /* JoinPartyViewModel.swift */,
 			);
 			path = JoinParty;
 			sourceTree = "<group>";
@@ -278,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				CDECBC3E28E3F4E800F5311D /* SpotifyLoginView.swift */,
+				CDBFFC1B29022F6000FBF1F4 /* SpotifyLoginViewModel.swift */,
 			);
 			path = SpotifyLogin;
 			sourceTree = "<group>";
@@ -457,6 +503,7 @@
 				CDECBC3928E3F1F600F5311D /* MainView.swift in Sources */,
 				CD525E2128E5525900BE475F /* Images.swift in Sources */,
 				CD525E1B28E5301500BE475F /* PartyqButton.swift in Sources */,
+				CDBFFC1C29022F6000FBF1F4 /* SpotifyLoginViewModel.swift in Sources */,
 				CD7F7A3028FBBF350049A441 /* AboutSheet.swift in Sources */,
 				CD7F7A3328FBBFAA0049A441 /* PartyHomeView.swift in Sources */,
 				CDCD172428EA98A700360D8E /* ServiceProvider.swift in Sources */,
@@ -465,9 +512,12 @@
 				CDCD171B28EA88C300360D8E /* SpotifyAuthenticationService.swift in Sources */,
 				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,
 				CD7F7A2D28FBACD30049A441 /* Strings.swift in Sources */,
+				CDBFFC1829022CAA00FBF1F4 /* JoinPartyViewModel.swift in Sources */,
 				CDA1A3E928E9407F00DF3AC7 /* TextBox.swift in Sources */,
+				CDBFFC1A29022CD700FBF1F4 /* CommunicationService.swift in Sources */,
 				CDCD171D28EA8A0900360D8E /* SecretsService.swift in Sources */,
 				CDECBC3F28E3F4E800F5311D /* SpotifyLoginView.swift in Sources */,
+				CDBFFC2C2902471B00FBF1F4 /* Toast.swift in Sources */,
 				CDCD171F28EA8F8800360D8E /* DeeplinkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +526,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBFFC282902394300FBF1F4 /* MockCommunicationService.swift in Sources */,
 				CDCD172228EA927A00360D8E /* DeeplinkManagerTests.swift in Sources */,
+				CDBFFC2A2902395E00FBF1F4 /* MockSpotifyAuthenticationService.swift in Sources */,
+				CDBFFC24290238E500FBF1F4 /* MockSpotifyMusicService.swift in Sources */,
+				CDBFFC1F290237C800FBF1F4 /* JoinPartyViewModelTests.swift in Sources */,
+				CDBFFC262902390E00FBF1F4 /* MockSecretService.swift in Sources */,
+				CDBFFC222902382400FBF1F4 /* MockProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

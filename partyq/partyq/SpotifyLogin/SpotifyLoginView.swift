@@ -5,6 +5,8 @@ import SwiftUI
 struct SpotifyLoginView: View {
     // MARK: Internal
 
+    let viewModel: SpotifyLoginViewModel
+
     var body: some View {
         HStack(spacing: 8) {
             Spacer()
@@ -28,7 +30,7 @@ struct SpotifyLoginView: View {
 
             Spacer()
         }
-        .background(Colors.primary100)
+        .background(Colors.backgroundColor)
     }
 
     // MARK: Private
@@ -85,6 +87,6 @@ struct SpotifyLoginView: View {
 
 struct SpotifyLoginView_Previews: PreviewProvider {
     static var previews: some View {
-        SpotifyLoginView()
+        SpotifyLoginView(viewModel: .init(ctx: globalContext))
     }
 }

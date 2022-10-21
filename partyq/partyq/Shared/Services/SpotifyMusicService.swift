@@ -15,7 +15,7 @@ class SpotifyMusicService: SpotifyMusicServiceProvider {
     var appRemote: SPTAppRemote?
 
     func setup(config: SPTConfiguration) {
-        appRemote = SPTAppRemote(configuration: config, logLevel: .debug) // TODO: dont want debug in prod
+        appRemote = SPTAppRemote(configuration: config, logLevel: .debug) // TODO: dont want debug in prod?
 //        appRemote.connectionParameters.accessToken = self.accessToken
 //        appRemote.delegate = self
     }

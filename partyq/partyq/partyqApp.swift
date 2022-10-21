@@ -28,4 +28,4 @@ struct partyqApp: App {
     }
 }
 
-let ctx: Provider = ServiceProvider()
+let globalContext: Provider = ServiceProvider()
