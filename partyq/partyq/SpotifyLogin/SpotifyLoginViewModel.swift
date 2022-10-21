@@ -1,8 +1,11 @@
-//
-//  SpotifyLoginViewModel.swift
-//  partyq
-//
-//  Created by Liam1 on 10/20/22.
-//
+class SpotifyLoginViewModel {
+    // MARK: Lifecycle
 
-import Foundation
+    init(ctx: Provider) {
+        self.ctx = ctx
+    }
+
+    // MARK: Private
+
+    private let ctx: Provider
+}

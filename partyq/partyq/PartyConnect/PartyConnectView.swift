@@ -25,11 +25,11 @@ struct PartyConnectView: View {
                     Spacer()
 
                     VStack(spacing: 16) {
-                        NavigationLink(destination: SpotifyLoginView()) {
+                        NavigationLink(destination: SpotifyLoginView(viewModel: .init(ctx: globalContext))) {
                             PartyqButton(Strings.startParty)
                         }
 
-                        NavigationLink(destination: JoinPartyView()) {
+                        NavigationLink(destination: JoinPartyView(viewModel: .init(ctx: globalContext))) {
                             PartyqButton(Strings.joinParty)
                         }
                     }
@@ -39,7 +39,7 @@ struct PartyConnectView: View {
 
                 Spacer()
             }
-            .background(Colors.primary100)
+            .background(Colors.backgroundColor)
         }
     }
 }
