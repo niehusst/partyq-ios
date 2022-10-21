@@ -1,12 +1,10 @@
-//
-//  MockMusicService.swift
-//  partyqTests
-//
-//  Created by Liam1 on 10/20/22.
-//
-
 @testable import partyq
+import SpotifyiOS
 
-class MockMusicService: SpotifyMusicServiceProvider {
-    
+class MockSpotifyMusicService: SpotifyMusicServiceProvider {
+    func setup(config _: SPTConfiguration) {}
+
+    func connect() {}
+
+    func disconnect() {}
 }

@@ -1,8 +1,9 @@
-//
-//  MockCommunicationService.swift
-//  partyqTests
-//
-//  Created by Liam1 on 10/20/22.
-//
+@testable import partyq
 
-import Foundation
+class MockCommunicationService: CommunicationServiceProvider {
+    var currentlySearching = false
+
+    func connectToParty(with _: String) {
+        currentlySearching = true
+    }
+}

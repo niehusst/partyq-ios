@@ -1,8 +1,7 @@
-//
-//  MockSecretService.swift
-//  partyqTests
-//
-//  Created by Liam1 on 10/20/22.
-//
+@testable import partyq
 
-import Foundation
+class MockSecretService: SecretsServiceProvider {
+    var spotifyClientId: String = "mock_client_id"
+
+    var spotifyDeeplinkUrl: String = "partyq://mock_deeplink"
+}

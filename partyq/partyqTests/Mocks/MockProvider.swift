@@ -1,8 +1,19 @@
-//
-//  MockProvider.swift
-//  partyqTests
-//
-//  Created by Liam1 on 10/20/22.
-//
+@testable import partyq
 
-import Foundation
+class MockProvider: Provider {
+    lazy var musicService: SpotifyMusicServiceProvider = {
+        MockSpotifyMusicService()
+    }()
+
+    lazy var authService: SpotifyAuthenticationServiceProvider = {
+        MockSpotifyAuthenticationService()
+    }()
+
+    lazy var secrets: SecretsServiceProvider = {
+        MockSecretService()
+    }()
+
+    lazy var communicationService: CommunicationServiceProvider = {
+        MockCommunicationService()
+    }()
+}

@@ -1,8 +1,5 @@
-//
-//  MockSpotifyAuthenticationService.swift
-//  partyqTests
-//
-//  Created by Liam1 on 10/20/22.
-//
+@testable import partyq
 
-import Foundation
+class MockSpotifyAuthenticationService: SpotifyAuthenticationServiceProvider {
+    func setup(secretsService _: SecretsServiceProvider) {}
+}
