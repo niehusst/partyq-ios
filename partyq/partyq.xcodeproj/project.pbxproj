@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD3A754F28E7E22A00AF98F4 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = CD3A754E28E7E22A00AF98F4 /* SpotifyiOS */; };
 		CD3A755228E7E2D900AF98F4 /* SpotifyMusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3A755128E7E2D900AF98F4 /* SpotifyMusicService.swift */; };
+		CD4A89942903915500AE5C53 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A89932903915500AE5C53 /* Log.swift */; };
 		CD4AA81228E3E78E003E33CC /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81128E3E78E003E33CC /* Nimble */; };
 		CD4AA81528E3E7C0003E33CC /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81428E3E7C0003E33CC /* Quick */; };
 		CD4AA81928E3ECC0003E33CC /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CD4AA81828E3ECC0003E33CC /* Rswift */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		CD3A755128E7E2D900AF98F4 /* SpotifyMusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMusicService.swift; sourceTree = "<group>"; };
+		CD4A89932903915500AE5C53 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		CD525E1A28E5301400BE475F /* PartyqButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyqButton.swift; sourceTree = "<group>"; };
 		CD525E1E28E5524D00BE475F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CD525E2028E5525900BE475F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				CDCD171E28EA8F8800360D8E /* DeeplinkManager.swift */,
 				CDCD172328EA98A700360D8E /* ServiceProvider.swift */,
 				CDBFFC1929022CD700FBF1F4 /* CommunicationService.swift */,
+				CD4A89932903915500AE5C53 /* Log.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				CD3A755228E7E2D900AF98F4 /* SpotifyMusicService.swift in Sources */,
 				CD911CB728DD5D8F005E34BB /* partyqApp.swift in Sources */,
 				CDCD171B28EA88C300360D8E /* SpotifyAuthenticationService.swift in Sources */,
+				CD4A89942903915500AE5C53 /* Log.swift in Sources */,
 				CDECBC3628E3ED7F00F5311D /* R.generated.swift in Sources */,
 				CD7F7A2D28FBACD30049A441 /* Strings.swift in Sources */,
 				CDBFFC1829022CAA00FBF1F4 /* JoinPartyViewModel.swift in Sources */,
