@@ -17,6 +17,7 @@ class JoinPartyViewModel: ObservableObject {
         if code.count != 4 {
             return false
         }
+        Log.info("Searching for parties with code \(code)...")
         ctx.communicationService.connectToParty(with: code)
         isSearching = true
         return true
